@@ -1,0 +1,70 @@
+/***HERO SECTION***/
+.hero_header_content {
+    display: flex;
+
+    color: white;
+    font-family: "Source Sans 3", sans-serif;
+
+    /* background-image: set in jsx as most recent posts image */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    min-height: 500px;
+
+    padding: 3em 0 0;
+}
+
+.hero_header_content:hover {
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+.hero_header_content {
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+
+    min-height: 500px;
+
+    padding: 3em;
+}
+
+.hero_date {
+    text-transform: uppercase;
+    grid-column: span 2;
+}
+
+.hero_title {
+    font-size: 2.5rem;
+    margin: 0;
+    grid-column: span 2;
+}
+
+.hero_content {
+    width: 1fr;
+    margin: 0;
+}
+
+
+/*text content*/
+.unordered_ordered_list {
+    display: inline-block;
+    list-style-type: none;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.unordered_ordered_list li {
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+.unordered_ordered_list li:first-child {
+    margin-left: 0;
+}
