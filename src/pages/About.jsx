@@ -1,4 +1,5 @@
 import Blog from "../components/Blog";
+import "../css/about.css";
 
 export default function About() {
     return (
