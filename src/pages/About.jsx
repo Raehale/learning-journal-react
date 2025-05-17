@@ -4,17 +4,17 @@ import "../css/about.css";
 export default function About() {
     return (
         <>
-            <main class="about-content">
-                <div class="about-header">
-                    <img src="../src/assets/images/rae-profile-pic-ft-arlo.jpg" alt="Rae looking into the camera with a cat in the background" class="about-img" />
-                    <div class="about-intro">
-                        <h1 class="about-title title">Hi there! My name is Rae, welcome to my learning journal.</h1>
-                        <p class="about-text">I started my career in tech in 2017 as an intern at a local web development company. As the company evolved the web department became obsolete
+            <main className="about-content">
+                <div className="about-header">
+                    <img src="../src/assets/images/rae-profile-pic-ft-arlo.jpg" alt="Rae looking into the camera with a cat in the background" className="about-img" />
+                    <div className="about-intro">
+                        <h1 className="about-title title">Hi there! My name is Rae, welcome to my learning journal.</h1>
+                        <p className="about-text">I started my career in tech in 2017 as an intern at a local web development company. As the company evolved the web department became obsolete
                             so my bosss helped me attend a bootcamp to become a front end developer. I finshed the bootcamp in may of 2025.
                         </p>
                     </div>
                 </div>
-                <div class="about-inner-content">
+                <div className="about-inner-content">
                     <h2>How I stay committed to learning</h2>
                     <p>While I am very passionate about front end development and find it entertaining on it's own, sometimes that isn't enough. When you've been studying every
                         night for a minimum of two hours each day for three months you get tired. You miss having a life, or relaxing. To keep myself motivated I rely heavily on
@@ -26,9 +26,9 @@ export default function About() {
                     <p>If even that doesn't work I code review. It shows me how much I know, keeps the knowledge at the front of my mind, and boosts my ego.</p>
 
                     <h2>How I got started</h2>
-                    <p>When I was in high school I took a computer science class, which was really just learning basic HTML. It wasn't anything crazy, but I was good at it and I like
+                    <p>When I was in high school I took a computer science className, which was really just learning basic HTML. It wasn't anything crazy, but I was good at it and I like
                         the envirment. I never really had any talent for anything until this, so it felt good to be good at something. Plus being able to just sit alone at a computer and
-                        listen to music and type away felt good. It was so much easier than any other class.
+                        listen to music and type away felt good. It was so much easier than any other className.
                     </p>
                     <p>After that I decided to go to college for computer science. I wasn't a particularly good student, but it just felt like what I was supposed to do. Before enrolling in
                         college I was advised my a school counselor to not go into computer science because I was a woman, and it would be hard because of the mysogyny. I went anyway, and witnessed
@@ -50,9 +50,9 @@ export default function About() {
                         to learn!
                     </p>
                 </div>
-                <div class="recent-posts">
-                    <h2 class="recent-posts-header">Recent Posts</h2>
-                    <div class="three-recent-posts posts" id="threeRecentPosts">
+                <div className="recent-posts">
+                    <h2 className="recent-posts-header">Recent Posts</h2>
+                    <div className="three-recent-posts posts" id="threeRecentPosts">
                         <Blog amount={3} />
                     </div>
                 </div>
