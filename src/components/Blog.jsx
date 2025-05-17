@@ -3,9 +3,9 @@ import PostSnippet from "./PostSnippet";
 import { postsArr } from "./data";
 import '../css/blogPosts.css';
 
-export default function Blog() {
+export default function Blog({amount}) {
     const allPosts = postsArr.reverse().splice(1, postsArr.length - 1).map((post, index) => {
-        if (index > 5) {
+        if (index > amount - 1) {
             return;
         } else {
             return (
