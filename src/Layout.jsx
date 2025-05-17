@@ -1,12 +1,11 @@
-import React from "react";
-import { GrNotes } from "react-icons/gr";
-import { Link } from "react-router"
+import { Outlet, Link } from "react-router-dom";
+import Footer from "./components/Footer"
 
-export default function Navbar() {
-    return (
+export default function Layout() {
+  return (
+    <>
         <header>
             <Link className="header_logo" to="/">
-                <GrNotes className="header_logo_icon" />
                 <p className="header_logo_text">
                     My learning journal
                 </p>
@@ -17,9 +16,15 @@ export default function Navbar() {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/about">About Me</Link></li>
                         <li><Link to="/portfolio">Portfolio</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
             </div>
         </header>
-    );
-}
+
+        <Outlet />
+
+        <Footer />
+    </>
+  );
+};

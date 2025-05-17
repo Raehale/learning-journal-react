@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Blog() {
+export default function NoPage() {
     return (
         <>
-            Blog
+            404
         </>
     );
 }
