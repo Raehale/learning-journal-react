@@ -4,7 +4,7 @@ import { postsArr } from "./data";
 import '../css/blogPosts.css';
 
 export default function Blog() {
-    const allPosts = postsArr.slice().reverse().map((post, index) => {
+    const allPosts = postsArr.reverse().splice(1, postsArr.length - 1).map((post, index) => {
         if (index > 5) {
             return;
         } else {

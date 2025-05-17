@@ -1,10 +1,10 @@
-import React from "react"
-import { postsArr } from "./data.js"
-import '../css/hero.css'
+import { postsArr } from "./data.js";
+import { Link } from "react-router-dom";
+import '../css/hero.css';
 
 export default function Hero() {
     const mostRecentPost = postsArr.at(-1);
-    const mostRecentPostsImage = "/src/assets/images/posts" + mostRecentPost.image
+    const mostRecentPostsImage = "/src/assets/images/posts" + mostRecentPost.image;
     const heroStyle = {
         backgroundImage: "url(" + mostRecentPostsImage + ")"
     }
@@ -29,23 +29,28 @@ export default function Hero() {
         heroContent = contentString;
     }
 
-    import(mostRecentPostsImage)
+    import(mostRecentPostsImage);
 
     return (
-        <section style={heroStyle} data-postid={mostRecentPost.id}>
-            <a href={"/html/post.html?id=" + mostRecentPost.id} className="hero_post">
-                <div className="hero_header_content" data-postid={mostRecentPost.id}>
-                    <div className="hero_date" data-postid={mostRecentPost.id}>
-                        {mostRecentPost.date}
+        <Link
+            to={"blog/" + mostRecentPost.id}
+            key={mostRecentPost.id}
+        >
+            <section style={heroStyle} data-postid={mostRecentPost.id}>
+                <a href={"/html/post.html?id=" + mostRecentPost.id} className="hero_post">
+                    <div className="hero_header_content" data-postid={mostRecentPost.id}>
+                        <div className="hero_date" data-postid={mostRecentPost.id}>
+                            {mostRecentPost.date}
+                        </div>
+                        <h2 className="hero_title" data-postid={mostRecentPost.id}>
+                            {mostRecentPost.title}
+                        </h2>
+                        <p className="hero_content" data-postid={mostRecentPost.id}>
+                            {heroContent}
+                        </p>
                     </div>
-                    <h2 className="hero_title" data-postid={mostRecentPost.id}>
-                        {mostRecentPost.title}
-                    </h2>
-                    <p className="hero_content" data-postid={mostRecentPost.id}>
-                        {heroContent}
-                    </p>
-                </div>
-            </a>
-        </section>
-    )
+                </a>
+            </section>
+        </Link>
+    );
 }

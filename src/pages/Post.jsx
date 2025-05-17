@@ -1,6 +1,7 @@
 import React from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { postsArr } from "../components/data";
+import "../css/post.css";
 
 export default function Post() {
     const [post, setPost] = React.useState({});
@@ -34,7 +35,7 @@ export default function Post() {
             <div className="selected-post">
                 <div className="selected-post-date">{date}</div>
                 <h2 className="selected-post-title title">{title}</h2>
-                <img src={"/images/posts" + image} alt={alt} className="selected-post-img" />
+                <img src={"/src/assets/images/posts" + image} alt={alt} className="selected-post-img" />
                 <p className="selected-post-content">{content}</p>
             </div>
         </article>
