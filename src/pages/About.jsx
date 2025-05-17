@@ -6,7 +6,7 @@ export default function About() {
         <>
             <main class="about-content">
                 <div class="about-header">
-                    <img src="../images/square-avatar-small.jpg" alt="Rae looking into the camera with a cat in the background" class="about-img" />
+                    <img src="../src/assets/images/rae-profile-pic-ft-arlo.jpg" alt="Rae looking into the camera with a cat in the background" class="about-img" />
                     <div class="about-intro">
                         <h1 class="about-title title">Hi there! My name is Rae, welcome to my learning journal.</h1>
                         <p class="about-text">I started my career in tech in 2017 as an intern at a local web development company. As the company evolved the web department became obsolete
