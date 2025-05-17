@@ -30,13 +30,14 @@ export default function Post() {
     }
 
     const { date, title, content, image, alt, id } = post;
+
     return (
         <article className="selected-post-content">
             <div className="selected-post">
                 <div className="selected-post-date">{date}</div>
                 <h2 className="selected-post-title title">{title}</h2>
                 <img src={"/src/assets/images/posts" + image} alt={alt} className="selected-post-img" />
-                <p className="selected-post-content">{content}</p>
+                <p className="selected-post-content" dangerouslySetInnerHTML={{__html: content}}></p>
             </div>
         </article>
     );
