@@ -410,6 +410,37 @@ export const postsArr = [
         alt: "The editor view of Scrimbas javascriptmas day 2 challenge, showing the code editor and the browser view which displays JavaScriptmas 2024 in black text.",
         id: "23",
     },
+    {
+        date: "May 16, 2025",
+        title: "Learning SQL",
+        content: `<h2>Getting Back to Learning</h2>
+                        I have been learning so much. I'm tired but I can see it paying off. At work I undertand things I didn't before. 
+                        This happens, I forget to study, things get hard, I start studying again, things make more sense. I'm always so shocked. 
+                        Things are making sense again!
+
+                    <h3>Education Progress</h3>
+                        I finished the front-end career path and a beginners SQL course and a basic command line course. 
+                        The last two being very small wins. The SQL has been very helpful. At work I have been working on editing dynamic reports 
+                        which rely on custom built queries written in SQL. I spent a good chunk of time familiarizing myself with them before 
+                        finally deciding to study SQL a bit more formally and <b>WOW</b> that helped. When jumping in to on the job training you 
+                        learn a lot of the advanced stuff, but you miss the building blocks which makes grasping the concepts a lot more difficult. 
+                        
+                    <h2>SQL</h2>
+                        So SQL is actually pretty cool. Similar to JavaScript in its readability. The flow is similar to the english language, 
+                        if you can form a sentence than reading SQL really isn't too hard. I mean the simple queries at least. I also learned that 
+                        SQL is one of the most used languages for professional developers, which makes it a little more worth my time I think. All and 
+                        all pretty good stuff! 
+                        
+                    <h3>Using SQL</h3>
+                        You SELECT all the columns you'll need from the table and specify which table that is. Than you can filter 
+                        it down from there using WHERE. You can change how it's displayed using ORDER BY, display only a certain number of rows using 
+                        LIMIT, get totals using MAX MIN SUM or COUNT. You can even get the AVG (average) and use CEIL or FLOOR to round up/down just 
+                        like in JavaScript. Theres some more that I learned, including HAVING, INSERT INTO, UPDATE and DELETE. It's actually a much 
+                        cooler language than I origionally thought. I figured it'd be all numbers and math, but it's just good ol' logic. SQL for the win!`,
+        image: "/judit-peter-person-taking-notes.jpg",
+        alt: "A person at a wooden desk taking notes with a pen in a notebook with a laptop in front of them.",
+        id: "24",
+    },
     // {
     //     date: "",
     //     title: "",
