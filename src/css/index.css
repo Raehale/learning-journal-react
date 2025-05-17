@@ -71,3 +71,25 @@ header {
     padding: 0.5rem 1rem;
 }
 
+/**FOOTER**/
+footer {
+    color: #D7D7D7;
+    text-align: center;
+    font-size: 0.875rem;
+
+    background-color: #202020;
+
+    padding: 2.5em;
+    margin-top: 5em;
+}
+
+footer h4 {
+    color: #ECECEC;
+
+    margin: 0;
+}
+
+footer a {
+    color: #D7D7D7;
+    font-weight: 600;
+}
