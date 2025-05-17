@@ -1,20 +1,26 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Blog from "./components/Blog"
-import Footer from "./components/Footer"
-import './css/index.css'
+import Layout from "./Layout";
+import Blog from "./pages/Blog";
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+import Post from "./pages/Post";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import './css/index.css';
 
-function App() {
+export default function App() {
 	return (
-		<>
-			<Navbar />
-			<main>
-				<Hero />
-				<Blog />
-			</main>
-			<Footer />
-		</>
-	)
+		<BrowserRouter>
+			<Routes>
+				<Route path="/" element={<Layout />}>
+					<Route index element={<Home />} />
+					<Route path="blog" element={<Blog />} />
+					<Route path="about" element={<About />} />
+					<Route path="contact" element={<Contact />} />
+					<Route path="blog/:id" element={<Post />} />
+					<Route path="*" element={<NoPage />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
+	);
 }
-
-export default App

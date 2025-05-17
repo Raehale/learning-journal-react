@@ -1,0 +1,183 @@
+/***POSTS***/
+.posts {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 2em;
+
+    padding: 2em 2em 0;
+    margin: 0 auto;
+}
+
+/**SINGLE POST**/
+.post {
+    box-sizing: border-box;
+
+    padding: 2em;
+    border: 2px solid #fafafa;
+    margin: 0 auto;
+}
+
+.post:hover {
+    border: 2px solid #ECECEC;
+    background-color: #f7f3f3;
+    box-sizing: border-box;
+
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, .1);
+
+    transition-duration: .5s;
+    cursor: pointer;
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+    .post:hover {
+        transition-duration: 0;
+    }
+}
+
+/*IMG*/
+.post-img {
+    display: block;
+
+    width: 100%;
+
+    margin: 0 auto 1em;
+    border-radius: 4px;
+}
+
+/*DATE*/
+.post-date {
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+/*TITLE*/
+.post-title {
+    font-size: 1.5rem;
+
+    margin: .5em 0;
+}
+
+.post:hover .post-title {
+    font-weight: 900;
+
+    transition-duration: .5s;
+}
+
+/*CONTENT*/
+.post-content {
+    margin-top: 0;
+}
+
+/***RECENT POSTS***/
+.recent-posts {
+    width: 90vw;
+    margin: 2em auto;
+}
+
+.recent-post {
+    margin-bottom: 2em;
+}
+
+/**HEADER**/
+.recent-posts-header {
+    text-align: center;
+}
+
+/***FOOTER***/
+footer {
+    color: #D7D7D7;
+    text-align: center;
+    font-size: 0.875rem;
+
+    background-color: #202020;
+
+    padding: 2.5em;
+    margin-top: 5em;
+}
+
+footer h4 {
+    color: #ECECEC;
+
+    margin: 0;
+}
+
+footer a {
+    color: #D7D7D7;
+    font-weight: 600;
+}
+
+/***MOBILITY***/
+@media (min-width: 768px){
+    /**TEXT**/
+    p {
+        font-size: 1.125rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    /***MENU HEADER***/
+    .page-header {
+        padding: .5em 2.5em;
+    }
+
+    /**NAV**/
+    .menu-nav {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+
+        background-color: transparent;
+
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-nav:before {
+        background-color: transparent;
+
+        border: solid transparent;
+        border-width: 0;
+        margin: 0 auto;
+
+        transform: rotate(-135deg);
+    }
+
+    .menu-nav li {
+        padding: 0;
+        border-bottom: 0px solid black;
+    }
+
+    .menu-nav li:first-child {
+        margin-top: 0;
+    }
+
+    .mobile-menu {
+        display: none;
+    }
+
+    /**POSTS**/
+    .posts {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .post {
+        width: 39vw;
+    }
+}
+
+@media (min-width: 1280px){
+    /**POSTS**/
+    .posts {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2.5em;
+    }
+
+    .post {
+        width: 25vw;
+    }
+}
