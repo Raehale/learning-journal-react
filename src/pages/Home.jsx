@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Hero />
-            <Blog />
+            <Blog amount={6} home={true} />
         </>
     );
 }
