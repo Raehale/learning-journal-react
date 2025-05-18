@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "../css/project.css";
 
 export default function ProjectSnippet({ projectData }) {
-    const {name, github, link, screenshot, description, id, tags, size, date} = projectData;
+    const { name, github, link, screenshot, description, id, tags, size, date } = projectData;
     let htmlTags = [];
     htmlTags = (tags).map(function(tag){
         return `<span class="${tag.toLowerCase()}-tag tag">${tag}</span>`;
@@ -11,7 +11,7 @@ export default function ProjectSnippet({ projectData }) {
     return (
             <article className={"portfolio-item " + size} style={{backgroundImage: "/src/assets/images/projects" + screenshot}}>
                 <Link
-                    to={id}
+                    to={"../project/" + id}
                     key={id}
                 >
                     <img src={"/src/assets/images/projects" + screenshot} alt={name} className="portfolio-image" />

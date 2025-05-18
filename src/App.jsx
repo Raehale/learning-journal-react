@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 import Post from "./pages/Post";
 import Portfolio from "./pages/Portfolio";
+import Project from "./pages/Project";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './css/index.css';
 
@@ -20,6 +21,7 @@ export default function App() {
 					<Route path="about" element={<About />} />
 					<Route path="contact" element={<Contact />} />
 					<Route path="blog/:id" element={<Post />} />
+					<Route path="project/:id" element={<Project />} />
 					<Route path="*" element={<NoPage />} />
 				</Route>
 			</Routes>
