@@ -9,8 +9,6 @@ export default function Hero() {
         backgroundImage: "url(" + mostRecentPostsImage + ")"
     }
 
-    import(mostRecentPostsImage);
-
     function removeTags(str) {
         if ((str === null) || (str === '')) {
             return false;
