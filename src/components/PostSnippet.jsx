@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 export default function PostSnippet({ postData }) {
     const {alt, content, date, id, image, title} = postData;
 
+    const postImage = "/src/assets/images/posts" + image;
+    import(postImage);
+
     let limitedContent;
     if (content.length > 500){
         limitedContent = content.slice(0, 500).replace(/<\/?[^>]+(>|$)/g, "") + '...';
