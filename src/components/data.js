@@ -782,4 +782,4 @@ export const projectsArr = [
     //     size: ["normal"],
     //     date: "July 19, 2024",
     // },
-]
+];

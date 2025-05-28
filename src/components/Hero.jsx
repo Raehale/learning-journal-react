@@ -1,12 +1,12 @@
-import React from "react"
+import React from "react";
 import { postsArr } from "./data.js"
-import '../css/hero.css'
+import "../css/hero.css";
 
 export default function Hero() {
     const mostRecentPost = postsArr.at(-1);
-    const mostRecentPostsImage = "/src/assets/images/posts" + mostRecentPost.image
+    const mostRecentPostsImage = "/src/assets/images/posts" + mostRecentPost.image;
     const heroStyle = {
-        backgroundImage: "url(" + mostRecentPostsImage + ")"
+        backgroundImage: "url(" + mostRecentPostsImage + ")",
     }
 
     function removeTags(str) {
@@ -20,7 +20,7 @@ export default function Hero() {
         }
     }
 
-    const contentString = removeTags(mostRecentPost.content)
+    const contentString = removeTags(mostRecentPost.content);
 
     let heroContent = '';
     if (contentString.length > 700) {
@@ -28,8 +28,6 @@ export default function Hero() {
     } else {
         heroContent = contentString;
     }
-
-    import(mostRecentPostsImage)
 
     return (
         <section style={heroStyle} data-postid={mostRecentPost.id}>
@@ -47,5 +45,5 @@ export default function Hero() {
                 </div>
             </a>
         </section>
-    )
+    );
 }
