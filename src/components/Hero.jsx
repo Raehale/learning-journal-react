@@ -1,6 +1,7 @@
 import React from "react";
 import { postsArr } from "./data.js"
 import "../css/hero.css";
+import image from "/src/assets/images/posts/judit-peter-person-taking-notes.jpg"
 
 export default function Hero() {
     const mostRecentPost = postsArr.at(-1);
