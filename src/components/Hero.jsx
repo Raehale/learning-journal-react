@@ -7,7 +7,7 @@ export default function Hero() {
     const mostRecentPost = postsArr.at(-1);
     const mostRecentPostsImage = "/src/assets/images/posts" + mostRecentPost.image;
     const heroStyle = {
-        backgroundImage: "url(" + mostRecentPostsImage + ")",
+        backgroundImage: "url(" + image + ")",
     }
 
     function removeTags(str) {
