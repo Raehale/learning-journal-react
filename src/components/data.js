@@ -1,28 +1,37 @@
-        import image1 from "/src/assets/images/posts/ilya-pavlov-monitor-with-code.jpg";
-        import image2 from "/src/assets/images/posts/christin-hume-person-at-laptop.jpg";
-        import image3 from "/src/assets/images/posts/mitchell-orr-uphill.jpg";
-        import image4 from "/src/assets/images/posts/awmleer-I--person-at-laptop.jpg";
-        import image5 from "/src/assets/images/posts/sarandy-westfall-photos.jpg";
-        import image6 from "/src/assets/images/posts/kelly-sikkema-sticky-notes.jpg";
-        import image7 from "/src/assets/images/posts/dylan-gillis-laptop-on-table.jpg";
-        import image8 from "/src/assets/images/posts/muhammad-rahim-person-painting.jpg";
-        import image9 from "/src/assets/images/posts/cdc-cleaning.jpg";
-        import image10 from "/src/assets/images/posts/corina-rainer-notes.jpg";
-        import image11 from "/src/assets/images/posts/cat-yawning.jpg";
-        import image12 from "/src/assets/images/posts/bruce-mars-person-thinking.jpg";
-        import image13 from "/src/assets/images/posts/chris-lawton-changing-leaves.jpg";
-        import image14 from "/src/assets/images/posts/andre-taissin-piggy-bank.jpg";
-        import image15 from "/src/assets/images/posts/stephen-monroe-map.jpg";
-        import image16 from "/src/assets/images/posts/christina-wocintechchat-woman-coding.jpg";
-        import image17 from "/src/assets/images/posts/ales-krivec-on-mountain.png";
-        import image18 from "/src/assets/images/posts/riccardo-farinazzo-maze.jpg";
-        import image19 from "/src/assets/images/posts/ricardo-gomez-angel-colors.jpg";
-        import image20 from "/src/assets/images/posts/campaign-creators-person-on-mac.jpg";
-        import image21 from "/src/assets/images/posts/javascriptmas-day-1.png";
-        import image22 from "/src/assets/images/posts/javascriptmas-day-2.png";
-        import image23 from '/src/assets/images/posts/javascriptmas-day-2.png';
-        import image24 from "/src/assets/images/posts/javascriptmas-day-3.png";
-        import image25 from "/src/assets/images/posts/judit-peter-person-taking-notes.jpg";
+//  _______ _________          _______ _________ ______              _______  _______  _       
+// (  ____ \\__   __/|\     /|(  ____ )\__   __/(  __  \   |\     /|(  ___  )(  ____ \| \    /\
+// | (    \/   ) (   | )   ( || (    )|   ) (   | (  \  )  | )   ( || (   ) || (    \/|  \  / /
+// | (_____    | |   | |   | || (____)|   | |   | |   ) |  | (___) || (___) || |      |  (_/ / 
+// (_____  )   | |   | |   | ||  _____)   | |   | |   | |  |  ___  ||  ___  || |      |   _ (  
+//       ) |   | |   | |   | || (         | |   | |   ) |  | (   ) || (   ) || |      |  ( \ \ 
+// /\____) |   | |   | (___) || )      ___) (___| (__/  )  | )   ( || )   ( || (____/\|  /  \ \
+// \_______)   )_(   (_______)|/       \_______/(______/   |/     \||/     \|(_______/|_/    \/
+                                                                                            
+import image1 from "/src/assets/images/posts/ilya-pavlov-monitor-with-code.jpg";
+import image2 from "/src/assets/images/posts/christin-hume-person-at-laptop.jpg";
+import image3 from "/src/assets/images/posts/mitchell-orr-uphill.jpg";
+import image4 from "/src/assets/images/posts/awmleer-I--person-at-laptop.jpg";
+import image5 from "/src/assets/images/posts/sarandy-westfall-photos.jpg";
+import image6 from "/src/assets/images/posts/kelly-sikkema-sticky-notes.jpg";
+import image7 from "/src/assets/images/posts/dylan-gillis-laptop-on-table.jpg";
+import image8 from "/src/assets/images/posts/muhammad-rahim-person-painting.jpg";
+import image9 from "/src/assets/images/posts/cdc-cleaning.jpg";
+import image10 from "/src/assets/images/posts/corina-rainer-notes.jpg";
+import image11 from "/src/assets/images/posts/cat-yawning.jpg";
+import image12 from "/src/assets/images/posts/bruce-mars-person-thinking.jpg";
+import image13 from "/src/assets/images/posts/chris-lawton-changing-leaves.jpg";
+import image14 from "/src/assets/images/posts/andre-taissin-piggy-bank.jpg";
+import image15 from "/src/assets/images/posts/stephen-monroe-map.jpg";
+import image16 from "/src/assets/images/posts/christina-wocintechchat-woman-coding.jpg";
+import image17 from "/src/assets/images/posts/ales-krivec-on-mountain.png";
+import image18 from "/src/assets/images/posts/riccardo-farinazzo-maze.jpg";
+import image19 from "/src/assets/images/posts/ricardo-gomez-angel-colors.jpg";
+import image20 from "/src/assets/images/posts/campaign-creators-person-on-mac.jpg";
+import image21 from "/src/assets/images/posts/javascriptmas-day-1.png";
+import image22 from "/src/assets/images/posts/javascriptmas-day-2.png";
+import image23 from '/src/assets/images/posts/javascriptmas-day-2.png';
+import image24 from "/src/assets/images/posts/javascriptmas-day-3.png";
+import image25 from "/src/assets/images/posts/judit-peter-person-taking-notes.jpg";
 
 
 export const postsArr = [
