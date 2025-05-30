@@ -1,5 +1,4 @@
-import React from "react";
-import { postsArr } from "./data.js"
+import { postsArr } from "./data.js";
 import "../css/hero.css";
 
 export default function Hero() {
