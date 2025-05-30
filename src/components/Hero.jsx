@@ -1,4 +1,4 @@
-import { postsArr } from "./data.js";
+import { postsArr } from "./data";
 import "../css/hero.css";
 
 export default function Hero() {
