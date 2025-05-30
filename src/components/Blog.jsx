@@ -1,4 +1,3 @@
-import React from "react";
 import PostSnippet from "./PostSnippet";
 import { postsArr } from "./data";
 import '../css/blogPosts.css';

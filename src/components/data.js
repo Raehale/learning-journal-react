@@ -29,9 +29,8 @@ import image19 from "/src/assets/images/posts/ricardo-gomez-angel-colors.jpg";
 import image20 from "/src/assets/images/posts/campaign-creators-person-on-mac.jpg";
 import image21 from "/src/assets/images/posts/javascriptmas-day-1.png";
 import image22 from "/src/assets/images/posts/javascriptmas-day-2.png";
-import image23 from '/src/assets/images/posts/javascriptmas-day-2.png';
-import image24 from "/src/assets/images/posts/javascriptmas-day-3.png";
-import image25 from "/src/assets/images/posts/judit-peter-person-taking-notes.jpg";
+import image23 from "/src/assets/images/posts/javascriptmas-day-3.png";
+import image24 from "/src/assets/images/posts/judit-peter-person-taking-notes.jpg";
 
 
 export const postsArr = [
@@ -473,7 +472,7 @@ export const postsArr = [
                         LIMIT, get totals using MAX MIN SUM or COUNT. You can even get the AVG (average) and use CEIL or FLOOR to round up/down just 
                         like in JavaScript. Theres some more that I learned, including HAVING, INSERT INTO, UPDATE and DELETE. It's actually a much 
                         cooler language than I origionally thought. I figured it'd be all numbers and math, but it's just good ol' logic. SQL for the win!`,
-        image: image25,
+        image: image24,
         alt: "A person at a wooden desk taking notes with a pen in a notebook with a laptop in front of them.",
         id: "24",
     },
